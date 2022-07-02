@@ -1,2 +1,10 @@
 # IC-tester-Using-Embedded-C
-It is required to write a Codevision C program for the AVR microcontroller that applies test patterns to TTL/CMOS ICs assigned to each group. The number of pins for the IC under test maybe 14, 16, 20 or 24 pin so your connection should be general as shown in the figure. Connect any USB to TTL module to the controller for serial communications with the PC. Adjust Baudrate to 115200. Load the Hex file of your program to the flash memory of the AVR. The program should apply the test patters and send the result to the PC for all the ICs assigned to each group. If there is no IC connected, and the Test Switch is pressed (and released), the message “EMPTY”should be sent to the PC terminal. When the first IC under test is put in its place, first connect the ground pin of the IC to GND and the positive supply pin of the IC to VCC directly. Then press the Test Switch, The IC number should appear on the terminal. Remove the first IC and disconnect the power pins then put the second IC, connect its power pins and press the switch, the number of the second IC should be sent to the terminal and so on repeat for the rest of ICs assigned to each group.You should make a simulation for testing of each IC on the Proteus microcontroller simulation software. The result should be displayed to the virtual terminal of Proteus.The project files as well as video presentation of the code explanation, physical testing, and proteus simulation should be uploaded to Google Drive Folder of each team 
+This project uses Atmega16A to test 6 different ICs using Codevision C program for the AVR microcontroller. Those ICs are 7430, 7432, 7433 7434, 7437, and 7438. The aim is to perform different tests on the IC in order to print out the name of the IC that is currently being tested, which is is done using Serial Communications with the PC using TTL. If there is no IC, the terminal should print “Empty”.
+
+ICS Description:
+7430: NAND
+7432: OR
+7434: NOR (Open Collector)
+7434: Buffer
+7437: NAND
+7438: NAND (Open Collector)
